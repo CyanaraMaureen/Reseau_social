@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Réseau Social</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/styley.css">
+  
+</head>
+<body>
+ 
+
+  
+    <!-- Topbar -->
+  
+  <header class="bg-primary text-white p-3">
+    <h2 class="m-0">Facebook</h2>
+  </header>
+
+
+  <div class="d-flex">
+
+    <!-- Sidebar -->
+    <nav class="bg-light p-6" style="width: 250px; min-height: 100vh;">
+      <h5>Barre de navigation</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="vues/clients/accueil.html">Accueil
+                 <i class="fas fa-home text-primary"></i>
+             </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="modules/profil.html">Profil
+                <i class="fas fa-user text-info"></i>
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="modules/conversations.html">Conversations
+                <i class="fas fa-message text-primary"></i>
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="modules/messages.html">Messages
+                <i class="fas fa-envelope text-danger"></i>
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="modules/amis.html">Amis
+                <i class="fas fa-hand-holding-heart text-info"></i>
+            </a>
+        </li>
+       
+        <li class="nav-item">
+            <a class="nav-link" href="vues/clients/connexion.php" onclick="déconnexion()">Déconnexion
+                <i class="fas fa-atlas text-success"></i>
+            </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Zone centrale avec les modules -->
+    <main class="p-4 flex-fill">
+      <h2 class="mb-4">Voici le dashboard</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-newspaper fa-2x mb-3 text-primary"></i>
+              <h5 class="card-title">Page d'accueil</h5>
+              <p class="card-text">Voir les articles, commenter, liker...</p>
+              <a href="vues/clients/accueil.html" class="btn btn-outline-primary">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-user fa-2x mb-3 text-success"></i>
+              <h5 class="card-title">Profil</h5>
+              <p class="card-text">Modifier votre photo de profil, vos infos...</p>
+              <a href="modules/profil.html" class="btn btn-outline-success">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-users fa-2x mb-3 text-info"></i>
+              <h5 class="card-title">Amis</h5>
+              <p class="card-text">Voir vos amis, gérer les invitations</p>
+              <a href="modules/amis.html" class="btn btn-outline-info">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-envelope fa-2x mb-3 text-danger"></i>
+              <h5 class="card-title">Messages</h5>
+              <p class="card-text">Envoyer et lire vos messages privés</p>
+              <a href="modules/messages.html" class="btn btn-outline-danger">Accéder</a>   <!--Lien aléatoire-->
+            </div>
+          </div>
+        </div>
+        <h5 id="user-display"></h5>
+      </div>
+    </main>
+  </div>
+  
+  <script src="assets/js/déconnexion.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

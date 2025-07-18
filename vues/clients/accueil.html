@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fil d'actualité</title>
+    <link rel="stylesheet" href="../../assets/css/all.css">  
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+      <link rel="stylesheet" href="../../assets/css/accueil.css"> <!--faire attention aux chemins qu'on mettra dans les autres liens-->
+</head>
+<body> 
+    <div class="col-md-3" style="padding-bottom: 15px ;">
+            <a href="../../index.html" class="btn btn-danger">
+              Retour au dashboard
+            </a>
+    </div>
+
+  <div id="fil_actualite"></div>
+    <div class=" mb-3 article">
+        <div class="card-body d-flex auteur">
+            <img src="../../assets/images/profil.jpg" alt="Photo de profil" class="rounded-circle photo-profil"> <!--on ajoute profil.jpg au dossier images.C'est juste pour tester sinon dans la pratique chauqe utilisateur a sa pp-->
+            <span class="card-title mb-1 nom-prenom">Daniel LOL</span>
+            <span class="text-muted small date">12/03/25</span>        <!--données statiques pour vérifier.Ne pas oublier de les retirer-->
+        </div>
+         
+       
+        <div class="description">Voici un exemple de contenu simple. Publiez aussi quelque chose avec une image ♥</div>     <!--toujours des données statiques -->
+            <img src="" alt="Image d'article" class="image-article" style="display: none;">  <!-- l'image est optionnelle donc affichage non obligatoire -->
+     
+            <div class="mt-2 actions">
+            <button class="btn btn-sm btn-outline-danger like"> <i class="fas fa-heart"></i> 8</button> <!--toujours des données statiques -->
+            <button class="btn btn-sm btn-outline-secondary dislike"> <i class="fas fa-thumbs-down"></i>1 </button>
+            <button class="btn btn-sm btn-outline-dark commenter"> <i class="fas fa-comment"></i> Commentaires</button>
+        </div>
+       
+        <div class="mt-3 zone-commentaires" style ="display: none;" > 
+            <div class="mb-3 commentaires">
+                <div class="mb-0 auteur-com"></div>
+                <div class="mb-1 contenu-com"></div>
+                <div class="text-muted date-com"></div>
+            </div>
+            
+            <div class="mt-3 ajout-commentaire">
+              <textarea name="com" placeholder="Ajouter un commentaire" class="champ-commentaire" rows="5" cols="60" ></textarea> 
+                <button class="btn btn-primary envoyer-commentaire">Envoyer</button>
+            </div>
+        </div>
+        
+        <div class="mb-3 p-3">
+            <h4>Publier un article</h4>
+            <form method="post" id="form-article" enctype="multipart/form-data">
+                <textarea name="contenu" rows="4" class="form-control mb-2" placeholder="Quoi de neuf ? Publiez quelque chose" required></textarea>
+                <input type="file" name="image" class="form-control mb-2">
+                <button type="submit" class="btn btn-primary">Publier</button>
+            </form>
+        </div>
+
+    
+    </div>
+
+   <script src="../../assets/js/accueil.js"></script>
+   <script type="module" src="../../assets/js/emoji-picker.js"></script>
+   <script src="../../assets/js/init-emoji.js"></script>
+</body>
+</html>
+

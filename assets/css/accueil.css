@@ -1,0 +1,98 @@
+.photo-profil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;   
+}
+
+.auteur{
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+}
+.date{
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #555;
+ 
+}
+
+button.like i{
+    color: red;
+}
+
+button.dislike i{
+    color:yellowgreen;
+}
+
+button.commenter i{
+    color: #007BFF;
+
+}
+
+.auteur-com{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date-com{
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 8px;
+    
+}
+
+.envoyer-commentaire{
+    margin-bottom: 30px;
+}
+
+
+.card-title{
+    font-weight: bold;
+    color: #050505;
+}
+
+.text-muted{
+    font-size: 0.85em;
+}
+
+.btn-outline-danger i,
+.btn-outline-secondary i,
+.btn-outline-dark i{
+    margin-right: 6px;
+}
+
+.image-article{
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.actions button{
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+button.emoji i{
+     color:pink;
+}

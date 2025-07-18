@@ -1,0 +1,66 @@
+/* Style général */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Topbar */
+header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+nav {
+  border-right: 1px solid #ddd;
+  background-color: brown;
+}
+
+nav h5 {
+  margin-bottom: 1rem;
+}
+
+nav .nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+nav .nav-link:hover {
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+/* Zone principale */
+main h2 {
+  font-weight: bold;
+}
+
+/* Cartes modules */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card .btn {
+  margin-top: 1rem;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  header h3 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
